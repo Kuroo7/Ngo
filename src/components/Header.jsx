@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png" 
 
 const Header = () => {
   return (
     <nav className="flex sticky bg-white top-0 text-xl items-center h-20 shadow-lg justify-between px-5">
       <div>
-        <button className="text-2xl font-bold text-blue-800">Logo</button>
+        <img className="h-28" src={logo} alt="" />
       </div>
       <div>
         <ul className="flex gap-10">
@@ -15,7 +16,7 @@ const Header = () => {
             <Link to="/about" className="hover:text-blue-700">About Us</Link>
           </li>
           <li>
-            <Link to="/contact" className="hover:text-blue-700">Contact Us</Link>
+            <Link to="/missionandvision" className="hover:text-blue-700">Mission and Vision</Link>
           </li>
         </ul>
       </div>

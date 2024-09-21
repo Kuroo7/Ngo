@@ -2,9 +2,9 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import AboutUs from './pages/AboutUs';
-import ContactUs from './pages/ContactUs';
 import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MissionnNvission from './pages/MissionnNvission';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
-            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/missionandvision" element={<MissionnNvission/>} />
           </Routes>
         </main>
         <Footer />
